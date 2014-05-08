@@ -36,7 +36,7 @@ Example JSON file is shown below.
 
 {
     "wsm":  {
-        "connString": "jdbc:sqlite:/Users/barclakj/Google Drive/code/wsm/test.db",
+        "connString": "jdbc:sqlite:/path/to/test.db",
         "driver": "org.sqlite.JDBC",
         "operations": [
             { "path": "listbob", "statement": "select name, id from bob", "methods": "GET,POST" },
