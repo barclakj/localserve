@@ -19,6 +19,7 @@ This will spawn a web-server on port 8765 by default serving content from the cu
 Additional parameters can be specified as below:
 
 java -jar localserve.jar <port> <sql.json>
+e.g. java -jar localserve.jar 8080 test.json
 
 This allows another port than 8765 to be used and for a SQLite JSON configuration file to be specified.
 
