@@ -1,0 +1,11 @@
+{
+    "wsm":  {
+        "connString": "jdbc:sqlite:/Users/barclakj/Google Drive/code/wsm/test.db",
+        "driver": "org.sqlite.JDBC",
+        "operations": [
+            { "path": "listbob", "statement": "select name, id from bob", "methods": "GET,POST" },
+            { "path": "querybob", "statement": "select id, name from bob where id={ID} order by name desc", "methods": "GET,POST" },
+            { "path": "insertbob", "statement": "insert into bob (id, name) values ({ID}, {N})", "redirect": "/sql/querybob", "methods": "GET,POST" }
+         ]
+    }
+}
